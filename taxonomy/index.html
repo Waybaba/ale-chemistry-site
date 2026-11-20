@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta
+      name="description"
+      content="A zoomable working atlas of research fields in ALE Chemistry."
+    />
+    <link rel="icon" href="/ale-chemistry-site/mark.svg" />
+    <title>Taxonomy | ALE Chemistry</title>
+    <script type="module" crossorigin src="/ale-chemistry-site/assets/taxonomy-B8rWNloZ.js"></script>
+    <link rel="modulepreload" crossorigin href="/ale-chemistry-site/assets/base-Cv3sViCa.js">
+    <link rel="modulepreload" crossorigin href="/ale-chemistry-site/assets/tree-B8q4rNAW.js">
+    <link rel="stylesheet" crossorigin href="/ale-chemistry-site/assets/base-BzcDfKxD.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a><header class="site-head"><div class="head-inner"><a class="brand" href="/ale-chemistry-site/" aria-label="ALE Chemistry home"><img src="/ale-chemistry-site/mark.svg" width="34" height="34" alt=""><span>ALE <b>Chemistry</b></span></a><nav aria-label="Primary"><a href="/ale-chemistry-site/">Home</a><a href="/ale-chemistry-site/taxonomy/" aria-current="page">Taxonomy</a><a href="/ale-chemistry-site/team/">Team</a></nav><a class="network-link" href="https://agents-last-exam.org/" aria-label="Agents’ Last Exam main site"><i data-lucide="globe-2"></i><span>Agents’ Last Exam</span></a></div></header>
+    <main id="main" class="atlas-page">
+      <div class="page-wrap page-intro">
+        <p class="overline"><span class="rule"></span>Research scope</p>
+        <h1>Taxonomy</h1>
+        <p>
+          Which chemistry and materials questions can an agent investigate with
+          computation and public data?
+        </p>
+        <nav class="atlas-jumps" aria-label="Taxonomy sections">
+          <a href="#fields">Research fields</a>
+          <a href="#workflows">Computational workflows</a>
+          <a href="#sample">Example: ammonia catalysis</a>
+        </nav>
+      </div>
+      <div class="atlas-shell page-wrap" id="fields">
+        <aside class="atlas-index" aria-label="Taxonomy index">
+          <div class="index-heading">
+            <h2>Field index</h2>
+            <button
+              class="icon-button index-toggle"
+              aria-label="Show field index"
+              aria-expanded="false"
+              aria-controls="index-body"
+              title="Show field index"
+            >
+              <i data-lucide="list-tree"></i>
+            </button>
+          </div>
+          <div id="index-body">
+            <label class="search-box"
+              ><i data-lucide="search"></i
+              ><input
+                id="atlas-search"
+                type="search"
+                placeholder="Field, question or code"
+                aria-label="Find a field or example question"
+                autocomplete="off"
+            /></label>
+            <label class="fit-filter"
+              >Dry-lab fit
+              <select id="fit-filter">
+                <option value="">All fields</option>
+              </select>
+            </label>
+            <div id="index-list"></div>
+          </div>
+        </aside>
+        <section class="atlas-work" aria-label="Interactive field map">
+          <div class="map-head">
+            <nav id="crumbs" aria-label="Taxonomy breadcrumb"></nav>
+            <div class="map-tools">
+              <button
+                id="zoom-out"
+                class="icon-button"
+                title="Zoom out"
+                aria-label="Zoom out"
+              >
+                <i data-lucide="minus"></i></button
+              ><button
+                id="zoom-in"
+                class="icon-button"
+                title="Zoom in"
+                aria-label="Zoom in"
+              >
+                <i data-lucide="plus"></i></button
+              ><button
+                id="fit"
+                class="icon-button"
+                title="Fit selection"
+                aria-label="Fit selection"
+              >
+                <i data-lucide="maximize"></i>
+              </button>
+            </div>
+          </div>
+          <svg
+            id="field-map"
+            role="group"
+            aria-label="Zoomable taxonomy map"
+            tabindex="0"
+          ></svg>
+          <div class="map-foot">
+            <div>
+              <span id="node-kind" class="mono"></span
+              ><strong id="node-name"></strong>
+              <p id="node-description" aria-live="polite"></p>
+              <div id="node-links" class="node-links"></div>
+            </div>
+            <button
+              class="icon-button"
+              id="up"
+              title="Parent level"
+              aria-label="Parent level"
+            >
+              <i data-lucide="corner-left-up"></i>
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="page-wrap edition">
+        <i data-lucide="book-open"></i>
+        <p>
+          <span id="edition-note"
+            >Dry-lab working draft, 18 November 2026.</span
+          >
+          Fit ratings are the authors' judgments.
+          <a href="https://claude.ai/artifact/L4qpZ2cJ8Bn9jedCf67J6v"
+            >Original atlas (中文)</a
+          >
+          ·
+          <a
+            href="https://www.nsf.gov/funding/opportunities/mps-chem-mps-chemistry-research-programs/nsf26-519/solicitation"
+            >NSF Chemistry</a
+          >
+          ·
+          <a
+            href="https://www.nsf.gov/funding/opportunities/mps-materials-mps-materials-research-programs/nsf26-521/solicitation"
+            >NSF Materials</a
+          >
+        </p>
+      </div>
+      <section id="workflows" class="page-wrap atlas-reading">
+        <p class="overline"><span class="rule"></span>Methods</p>
+        <h2>Six computational workflows</h2>
+        <p>
+          Fields describe the science; workflows describe the work. One field
+          can use several methods.
+        </p>
+        <div id="workflow-list"><details class="workflow-row" id="w1"><summary><span class="mono">W1</span><strong>Molecular electronic structure</strong><span class="disclosure" aria-hidden="true"></span></summary><div class="workflow-body"><p>Predict a molecule's energy, geometry or electronic transitions and compare with a measured observable.</p><p class="workflow-fields"><span>Related fields:</span> <a href="?node=c1#fields">C1 · Catalysis</a> <a href="?node=c3#fields">C3 · Mechanism &amp; function</a> <a href="?node=c4#fields">C4 · Structure &amp; dynamics</a> <a href="?node=c7#fields">C7 · Theory &amp; computation</a></p></div></details><details class="workflow-row" id="w2"><summary><span class="mono">W2</span><strong>First principles for periodic systems</strong><span class="disclosure" aria-hidden="true"></span></summary><div class="workflow-body"><p>Calculate a property of a surface or crystal and check it against published values.</p><p class="workflow-fields"><span>Related fields:</span> <a href="?node=c1#fields">C1 · Catalysis</a> <a href="?node=m2#fields">M2 · Ceramics</a> <a href="?node=m3#fields">M3 · Materials theory</a> <a href="?node=m5#fields">M5 · Electronic &amp; photonic</a> <a href="?node=m8#fields">M8 · Solid-state chemistry</a></p></div></details><details class="workflow-row" id="w3"><summary><span class="mono">W3</span><strong>Molecular simulation</strong><span class="disclosure" aria-hidden="true"></span></summary><div class="workflow-body"><p>Sample the configurations of a molecular system to estimate quantities such as binding or gas uptake.</p><p class="workflow-fields"><span>Related fields:</span> <a href="?node=c8#fields">C8 · Life processes</a> <a href="?node=c9#fields">C9 · Supramolecular &amp; nano</a> <a href="?node=m7#fields">M7 · Polymers</a> <a href="?node=m8#fields">M8 · Solid-state chemistry</a></p></div></details><details class="workflow-row" id="w4"><summary><span class="mono">W4</span><strong>Kinetics and multiscale modeling</strong><span class="disclosure" aria-hidden="true"></span></summary><div class="workflow-body"><p>Connect microscopic events to observable rates, morphologies or phase behavior.</p><p class="workflow-fields"><span>Related fields:</span> <a href="?node=c1#fields">C1 · Catalysis</a> <a href="?node=c4#fields">C4 · Structure &amp; dynamics</a> <a href="?node=c6#fields">C6 · Systems &amp; solutions</a> <a href="?node=m6#fields">M6 · Metals &amp; alloys</a></p></div></details><details class="workflow-row" id="w5"><summary><span class="mono">W5</span><strong>Data-driven modeling</strong><span class="disclosure" aria-hidden="true"></span></summary><div class="workflow-body"><p>Learn properties or screen candidates, then measure performance on held-out data.</p><p class="workflow-fields"><span>Related fields:</span> <a href="?node=c5#fields">C5 · Synthesis</a> <a href="?node=c7#fields">C7 · Theory &amp; computation</a> <a href="?node=m5#fields">M5 · Electronic &amp; photonic</a> <a href="?node=m8#fields">M8 · Solid-state chemistry</a></p></div></details><details class="workflow-row" id="w6"><summary><span class="mono">W6</span><strong>Experimental data interpretation</strong><span class="disclosure" aria-hidden="true"></span></summary><div class="workflow-body"><p>Infer structure from spectra or diffraction, then compare with a known reference.</p><p class="workflow-fields"><span>Related fields:</span> <a href="?node=c2#fields">C2 · Measurement &amp; imaging</a> <a href="?node=m4#fields">M4 · Condensed matter</a></p></div></details></div>
+      </section>
+      <section id="sample" class="page-wrap atlas-reading">
+        <p class="overline"><span class="rule"></span>Draft example</p>
+        <h2>Ammonia synthesis on iron</h2>
+        <p>
+          Could an agent recover a mechanism inferred from surface experiments
+          using calculations instead? The proposed example links
+          <a href="#w2">periodic electronic structure</a> to
+          <a href="#w4">kinetic modeling</a>. It is a draft, not a released
+          task.
+        </p>
+        <div class="reading-links">
+          <a href="https://claude.ai/artifact/RcVZBp7t5jjUbqYZPq3YxW"
+            >Read the sample workflow (中文)</a
+          ><a href="https://www.nobelprize.org/prizes/chemistry/2007/summary/"
+            >Ertl's 2007 Nobel Prize</a
+          ><a href="https://news.sciencenet.cn/htmlnews/2021/10/466577.shtm"
+            >Ammonia research retrospective (科学网)</a
+          >
+        </div>
+      </section>
+      <aside id="track-scope" class="page-wrap scope-note">
+        <strong>Wider track scope.</strong> Chemical engineering is part of ALE
+        Chemistry. The separate three-discipline taxonomy described in the team
+        brief (12 fields, 96 directions) is not represented by this dry-lab map.
+      </aside>
+      <noscript
+        ><p class="page-wrap">
+          The interactive map needs JavaScript. The workflow list and linked
+          original atlas are available without it.
+        </p></noscript
+      >
+    </main>
+    <footer><div class="foot-inner"><span class="foot-name">ALE Chemistry</span><nav aria-label="Related tracks"><a href="https://ale-physics.org/">Physics</a><a href="https://ale-astronomy.org/">Astronomy</a><a href="https://ale-robotics.org/">Robotics</a><a href="https://agents-last-exam.org/">Agents’ Last Exam</a></nav></div></footer>
+  </body>
+</html>
