@@ -11,93 +11,139 @@
     />
     <link rel="icon" href="/ale-chemistry-site/mark.svg" />
     <title>ALE Chemistry | Agents' Last Exam</title>
-    <script type="module" crossorigin src="/ale-chemistry-site/assets/home-K2YI4pwf.js"></script>
-    <link rel="modulepreload" crossorigin href="/ale-chemistry-site/assets/base-Cv3sViCa.js">
+    <script type="module" crossorigin src="/ale-chemistry-site/assets/home-Dp1kIN8c.js"></script>
+    <link rel="modulepreload" crossorigin href="/ale-chemistry-site/assets/base-8dI2TZqs.js">
     <link rel="modulepreload" crossorigin href="/ale-chemistry-site/assets/tree-B8q4rNAW.js">
     <link rel="stylesheet" crossorigin href="/ale-chemistry-site/assets/base-BzcDfKxD.css">
+    <link rel="stylesheet" crossorigin href="/ale-chemistry-site/assets/home-CnmJgTVb.css">
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a><header class="site-head"><div class="head-inner"><a class="brand" href="/ale-chemistry-site/" aria-label="ALE Chemistry home"><img src="/ale-chemistry-site/mark.svg" width="34" height="34" alt=""><span>ALE <b>Chemistry</b></span></a><nav aria-label="Primary"><a href="/ale-chemistry-site/" aria-current="page">Home</a><a href="/ale-chemistry-site/taxonomy/">Taxonomy</a><a href="/ale-chemistry-site/team/">Team</a></nav><a class="network-link" href="https://agents-last-exam.org/" aria-label="Agents’ Last Exam main site"><i data-lucide="globe-2"></i><span>Agents’ Last Exam</span></a></div></header>
     <main id="main">
-      <section class="specimen-hero" aria-labelledby="home-title">
-        <div class="hero-inner">
-          <div class="hero-copy">
+      <section class="scale-story" aria-labelledby="home-title" id="scale">
+        <div class="page-wrap lens-mast">
+          <div>
             <p class="kicker">
-              <span class="rule"></span>Agents’ Last Exam / Research tracks
+              <span class="rule"></span>Agents’ Last Exam / Research track
             </p>
             <h1 id="home-title">ALE <em>Chemistry</em></h1>
-            <p class="lead">
-              What would it take for an AI agent to do the work of a chemist?
+          </div>
+          <div class="lens-intro">
+            <p>
+              Research challenges for AI agents in chemistry, chemical
+              engineering and materials science.
             </p>
-            <p class="hero-body">
-              We bring domain experts together to define research challenges in
-              chemistry, chemical engineering and materials science, with
-              results that can be independently checked.
-            </p>
-            <a class="button solid" href="/ale-chemistry-site/taxonomy/"
+            <a class="quiet-link" href="/ale-chemistry-site/taxonomy/"
               ><i data-lucide="network"></i>Explore the taxonomy</a
             >
           </div>
+        </div>
+        <div class="lens-track" id="scale-track">
           <figure
-            class="specimen"
-            aria-label="Interactive structural model of carbon"
+            id="scale-instrument"
+            class="lens-instrument"
+            aria-label="A journey from a graphite pencil to a carbon atom"
           >
-            <div class="scale-rail" role="group" aria-label="Structural scale">
-              <span class="scale-title mono">Scale</span>
-              <button data-scale="0" aria-pressed="false">Atom</button
-              ><button data-scale="1" aria-pressed="false">Ring</button
-              ><button data-scale="2" aria-pressed="false">Sheet</button
-              ><button data-scale="3" aria-pressed="true">Crystal</button>
-            </div>
-            <div
-              class="model-stage"
-              id="model-stage"
-              tabindex="0"
-              aria-label="Rotatable graphite structure. Use arrow keys to rotate and plus or minus to change scale."
-            >
-              <img
-                id="model-poster"
-                src="/ale-chemistry-site/models/crystal.webp"
-                width="880"
-                height="590"
-                alt="Three staggered layers of a graphite crystal, with a highlighted six-carbon ring."
-              />
-            </div>
-            <figcaption>
-              <div>
-                <span class="mono graphite-label">Carbon / Structure study</span
-                ><strong id="model-title" aria-live="polite"
-                  >Graphite crystal</strong
-                ><span id="model-caption"
-                  >Stacked carbon sheets, viewed along their edge.</span
-                ><br /><a
-                  id="scale-field"
-                  href="/ale-chemistry-site/taxonomy/?node=m8"
-                  >Solid State and Materials Chemistry</a
-                >
+            <div class="page-wrap lens-interior">
+              <div class="lens-topline">
+                <h2>From pencil to atom</h2>
+                <a
+                  href="#research-scope"
+                  class="scope-shortcut"
+                  aria-label="Skip the scale explorer and continue to research scope"
+                  >Research scope <i data-lucide="chevrons-down"></i
+                ></a>
               </div>
-              <div class="model-tools">
-                <button
-                  class="icon-button"
-                  id="rotate"
-                  title="Pause rotation"
-                  aria-label="Pause rotation"
+              <div class="lens-work">
+                <nav class="lens-landmarks" aria-label="Scale landmarks">
+                  <button type="button" data-scale="0" aria-pressed="true"><span class="landmark-dot" aria-hidden="true"></span>Pencil</button><button type="button" data-scale="1" aria-pressed="false"><span class="landmark-dot" aria-hidden="true"></span>Point</button><button type="button" data-scale="2" aria-pressed="false"><span class="landmark-dot" aria-hidden="true"></span>Core</button><button type="button" data-scale="3" aria-pressed="false"><span class="landmark-dot" aria-hidden="true"></span>Flake</button><button type="button" data-scale="4" aria-pressed="false"><span class="landmark-dot" aria-hidden="true"></span>Terrace</button><button type="button" data-scale="5" aria-pressed="false"><span class="landmark-dot" aria-hidden="true"></span>Layers</button><button type="button" data-scale="6" aria-pressed="false"><span class="landmark-dot" aria-hidden="true"></span>Sheet</button><button type="button" data-scale="7" aria-pressed="false"><span class="landmark-dot" aria-hidden="true"></span>Ring</button><button type="button" data-scale="8" aria-pressed="false"><span class="landmark-dot" aria-hidden="true"></span>Atom</button>
+                </nav>
+                <div
+                  class="lens-stage"
+                  id="model-stage"
+                  tabindex="0"
+                  role="group"
+                  aria-label="Carbon structure model. Scroll to change scale. With the model focused, plus and minus change scale, and left and right rotate."
                 >
-                  <i data-lucide="pause"></i></button
-                ><button
-                  class="icon-button"
-                  id="recenter"
-                  title="Reset view"
-                  aria-label="Reset view"
-                >
-                  <i data-lucide="rotate-ccw"></i>
-                </button>
+                  <img
+                    id="model-poster"
+                    src="/ale-chemistry-site/models/pencil.webp"
+                    width="960"
+                    height="640"
+                    alt="A sharpened graphite pencil in a yellow wooden case."
+                  />
+                  <div
+                    id="model-probe"
+                    class="lens-probe"
+                    aria-hidden="true"
+                    hidden
+                  >
+                    <span></span>
+                  </div>
+                  <div class="lens-tools">
+                    <button
+                      class="icon-button"
+                      id="rotate"
+                      title="Start rotation"
+                      aria-label="Start rotation"
+                    >
+                      <i data-lucide="play"></i>
+                    </button>
+                    <button
+                      class="icon-button"
+                      id="recenter"
+                      title="Reset orientation"
+                      aria-label="Reset orientation"
+                    >
+                      <i data-lucide="rotate-ccw"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-            </figcaption>
+              <figcaption class="lens-caption">
+                <div class="lens-description">
+                  <span class="mono" id="model-group">01 / 09 · Object</span>
+                  <h3 id="model-title" aria-live="polite">A graphite pencil</h3>
+                  <p id="model-caption">
+                    The yellow wood holds the writing material. Follow the dark
+                    point to find the carbon.
+                  </p>
+                  <a id="scale-field" href="/ale-chemistry-site/taxonomy/?node=m8"
+                    >Solid State and Materials Chemistry</a
+                  >
+                </div>
+                <div class="lens-meter">
+                  <div class="meter-heading">
+                    <span class="mono">Approx. scale</span
+                    ><output id="length-value" for="scale-range" aria-live="off"
+                      >18 cm</output
+                    >
+                  </div>
+                  <div class="scale-scrubber">
+                    <input
+                      id="scale-range"
+                      type="range"
+                      min="0"
+                      max="10000"
+                      step="1"
+                      value="0"
+                      aria-label="Magnification along the carbon scale"
+                      aria-valuetext="A graphite pencil, 18 cm"
+                    />
+                    <div class="ruler-ticks" aria-hidden="true">
+                      <span style="left:2.758130621897412%">10 cm</span><span style="left:24.36743492814243%">mm</span><span style="left:56.78139138750996%">µm</span><span style="left:89.1953478468775%">nm</span><span style="left:100%">Å</span>
+                    </div>
+                  </div>
+                  <select id="mobile-landmark" aria-label="Jump to a scale">
+                    <option value="0">Pencil</option><option value="1">Point</option><option value="2">Core</option><option value="3">Flake</option><option value="4">Terrace</option><option value="5">Layers</option><option value="6">Sheet</option><option value="7">Ring</option><option value="8">Atom</option>
+                  </select>
+                </div>
+              </figcaption>
+            </div>
           </figure>
         </div>
       </section>
-      <section class="page-wrap scope">
+      <section class="page-wrap scope" id="research-scope">
         <div class="scope-intro">
           <p class="overline"><span class="rule"></span>Research scope</p>
           <h2>
@@ -139,6 +185,24 @@
           ></a>
         </div>
       </section>
+      <details class="page-wrap lens-sources">
+        <summary>About the scale model</summary>
+        <p>
+          These are idealized views, not successive microscope images of one
+          pencil. The ruler gives a representative length scale. Colors
+          distinguish structures, not different elements.
+        </p>
+        <p>
+          <a href="https://www.faber-castell.com/corporate/history/production"
+            >Faber-Castell: pencil construction</a
+          >
+          ·
+          <a
+            href="https://nora.nerc.ac.uk/id/eprint/9015/1/Flake_graphite_lab_manual.pdf"
+            >British Geological Survey: graphite flakes and atomic structure</a
+          >
+        </p>
+      </details>
     </main>
     <footer><div class="foot-inner"><span class="foot-name">ALE Chemistry</span><nav aria-label="Related tracks"><a href="https://ale-physics.org/">Physics</a><a href="https://ale-astronomy.org/">Astronomy</a><a href="https://ale-robotics.org/">Robotics</a><a href="https://agents-last-exam.org/">Agents’ Last Exam</a></nav></div></footer>
   </body>
